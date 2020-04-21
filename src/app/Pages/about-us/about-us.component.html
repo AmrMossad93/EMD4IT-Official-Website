@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-xl-12">
           <div class="hero-cap text-center">
-            <h2>About <span style="color: #F7921C">EMD<span style="color: #6D2671">4</span>IT</span> </h2>
+            <h2>About <span style="color: #F7921C">EMD<span style="color: #6D2671">4</span>IT</span></h2>
           </div>
         </div>
       </div>
@@ -27,10 +27,12 @@
       </div>
       <div class="col-xl-5 col-lg-5">
         <div class="trusted-caption">
-          <h2>Welcome To <span style="color: #F7921C">EMD<span style="color: #6D2671">4</span>IT</span> </h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostru dolor sit amet, consectetur adipn.</p>
-          <a href="#" class="btn trusted-btn">Learn More</a>
+          <h2>Welcome To <span style="color: #F7921C">EMD<span style="color: #6D2671">4</span>IT</span></h2>
+          <p>EMD4IT is a fast growing software house in the heart of the Middle East, Egypt. We develop business through
+            automation using web technologies and software applications so that organizations achieve complete digital
+            transformation, increase service quality, improve service delivery and ultimately contain costs. We are
+            specialized in custom ERP systems, custom business automation, & business software automation.</p>
+          <a routerLink="/projects" class="btn trusted-btn">Have A Look</a>
         </div>
       </div>
     </div>
@@ -43,45 +45,19 @@
   <div class="container">
     <div class="row">
       <div class="col-xl-4 col-lg-4 col-md-6">
-        <div class="single-profile mb-30">
-          <!-- Front -->
-          <div class="single-profile-front">
-            <div class="profile-img">
-              <img src="assets/Tools/img/team/team_1.jpg" alt="">
-            </div>
-            <div class="profile-caption">
-              <h4><a href="#">Business Planning</a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                .</p>
-            </div>
-          </div>
-        </div>
+        <app-profile-card [imgPath]="'assets/Tools/img/team/team_1.jpg'" [route]="'service/software-development'"
+                          [paragraph]="'We have over a decade of experiencing designing, delivering, and supporting world-class Web & mobile applications using our award-winning Agile engineering principles, enabling us to ship over 50 apps each year to the Apple and Google stores.'"
+                          [title]="'Development'"></app-profile-card>
       </div>
       <div class="col-xl-4 col-lg-4 col-md-6">
-        <div class="single-profile mb-30">
-          <!-- Front -->
-          <div class="single-profile-front">
-            <div class="profile-img">
-              <img src="assets/Tools/img/team/team_2.jpg" alt="">
-            </div>
-            <div class="profile-caption">
-              <h4><a href="#">Financial Projections</a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                .</p>
-            </div>
-          </div>
-        </div>
+        <app-profile-card [imgPath]="'assets/Tools/img/team/team_2.jpg'" [route]="'service/marketing'"
+                          [paragraph]="'Social media marketing across all channels (Facebook, Instagram, twitter, Snapchat, & Pinterest). Search engine marketing (Google & Bing)'"
+                          [title]="'Advertising & Marketing'"></app-profile-card>
       </div>
       <div class="col-xl-4 col-lg-4 col-md-6">
-        <div class="single-profile mb-30">
-          <!-- Back -->
-          <div class="single-profile-back-last">
-            <h2>What we do for you</h2>
-            <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore smod tem magna aliqua.
-              Ut enim.</p>
-            <a href="#">View profile »</a>
-          </div>
-        </div>
+        <app-profile-back-last-card [title]="'What we do for you'"
+                                    [paragraph]="'EMD4IT Systems doesn’t only stop at developing concrete business solutions; it also offers each client the luxury of getting uniquely attractive designed software solutions to help the client interpret who they really are among their peers.'"
+                                    [route]="'projects'" [btnName]="'Have A Look'"></app-profile-back-last-card>
       </div>
     </div>
   </div>
@@ -149,55 +125,3 @@
 </div>
 <!-- Testimonial End -->
 
-<!-- Recent Area Start -->
-<div class="recent-area section-paddingt">
-  <div class="container">
-    <!-- section tittle -->
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="section-tittle text-center">
-          <h2>Our Recent News</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xl-4 col-lg-4 col-md-6">
-        <div class="single-recent-cap mb-30">
-          <div class="recent-img">
-            <img src="assets/Tools/img/recent/rcent_1.png" alt="">
-          </div>
-          <div class="recent-cap">
-            <span>Business planing</span>
-            <h4><a href="#">Amazing Places To Visit In Summer</a></h4>
-            <p>Nov 30, 2020</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-4 col-lg-4 col-md-6">
-        <div class="single-recent-cap mb-30">
-          <div class="recent-img">
-            <img src="assets/Tools/img/recent/rcent_2.png" alt="">
-          </div>
-          <div class="recent-cap">
-            <span>Audit</span>
-            <h4><a href="single-blog.html">Amazing Places To Visit In Summer</a></h4>
-            <p>Nov 30, 2020</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-4 col-lg-4 col-md-6">
-        <div class="single-recent-cap mb-30">
-          <div class="recent-img">
-            <img src="assets/Tools/img/recent/rcent_3.png" alt="">
-          </div>
-          <div class="recent-cap">
-            <span>Business planing</span>
-            <h4><a href="single-blog.html">Amazing Places To Visit In Summer</a></h4>
-            <p>Nov 30, 2020</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Recent Area End-->
