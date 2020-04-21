@@ -13,6 +13,10 @@ import { ContactUsPageComponent } from './Pages/contact-us-page/contact-us-page.
 import { ProjectsComponent } from './Pages/projects-page/projects.component';
 import { ProjectDetailsComponent } from './Pages/projects-page/project-details/project-details.component';
 import { ServicesPageComponent } from './Pages/services-page/services-page.component';
+import { ProfileCardComponent } from './Widgets/profile-card/profile-card.component';
+import { ProfileBackLastCardComponent } from './Widgets/profile-back-last-card/profile-back-last-card.component';
+import { ServiceCardComponent } from './Widgets/service-card/service-card.component';
+import { ProjectCardComponent } from './Widgets/project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { ServicesPageComponent } from './Pages/services-page/services-page.compo
     ContactUsPageComponent,
     ProjectsComponent,
     ProjectDetailsComponent,
-    ServicesPageComponent
+    ServicesPageComponent,
+    ProfileCardComponent,
+    ProfileBackLastCardComponent,
+    ServiceCardComponent,
+    ProjectCardComponent
   ],
   imports: [
     BrowserModule,
