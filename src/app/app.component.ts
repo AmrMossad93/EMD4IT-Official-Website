@@ -15,4 +15,8 @@ export class AppComponent implements OnInit {
       $(this).css('background-image', 'url(' + $(this).attr('data-background') + ')');
     });
   }
+
+  onActivate(event) {
+    window.scroll(0, 0);
+  }
 }
