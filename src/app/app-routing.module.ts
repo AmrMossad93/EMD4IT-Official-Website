@@ -7,6 +7,7 @@ import {ContactUsPageComponent} from './Pages/contact-us-page/contact-us-page.co
 import {ProjectsComponent} from './Pages/projects-page/projects.component';
 import {ProjectDetailsComponent} from './Pages/projects-page/project-details/project-details.component';
 import {ServicesPageComponent} from './Pages/services-page/services-page.component';
+import {FAQPageComponent} from './Pages/f-a-q-page/f-a-q-page.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'about', component: AboutUsComponent},
   {path: 'team', component: TeamPageComponent},
   {path: 'contact-us', component: ContactUsPageComponent},
+  {path: 'f-a-q', component: FAQPageComponent},
   {path: 'projects', component: ProjectsComponent},
   {path: 'projects/:id', component: ProjectDetailsComponent},
   {path: 'service/:type', component: ServicesPageComponent},

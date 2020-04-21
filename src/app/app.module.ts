@@ -17,6 +17,7 @@ import { ProfileCardComponent } from './Widgets/profile-card/profile-card.compon
 import { ProfileBackLastCardComponent } from './Widgets/profile-back-last-card/profile-back-last-card.component';
 import { ServiceCardComponent } from './Widgets/service-card/service-card.component';
 import { ProjectCardComponent } from './Widgets/project-card/project-card.component';
+import { FAQPageComponent } from './Pages/f-a-q-page/f-a-q-page.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ProjectCardComponent } from './Widgets/project-card/project-card.compon
     ProfileCardComponent,
     ProfileBackLastCardComponent,
     ServiceCardComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    FAQPageComponent
   ],
   imports: [
     BrowserModule,
