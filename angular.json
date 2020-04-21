@@ -1,0 +1,146 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "EMD4IT": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/EMD4IT",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": [
+              "src/assets/Tools/js/vendor/modernizr-3.5.0.min.js",
+              "src/assets/Tools/js/vendor/jquery-1.12.4.min.js",
+              "src/assets/Tools/js/popper.min.js",
+              "src/assets/Tools/js/bootstrap.min.js",
+
+              "src/assets/Tools/js/owl.carousel.min.js",
+              "src/assets/Tools/js/slick.min.js",
+              "src/assets/Tools/js/gijgo.min.js",
+              "src/assets/Tools/js/wow.min.js",
+              "src/assets/Tools/js/animated.headline.js",
+              "src/assets/Tools/js/jquery.magnific-popup.js",
+              "src/assets/Tools/js/jquery.scrollUp.min.js",
+              "src/assets/Tools/js/jquery.nice-select.min.js",
+              "src/assets/Tools/js/jquery.sticky.js",
+              "src/assets/Tools/js/contact.js",
+              "src/assets/Tools/js/jquery.form.js",
+              "src/assets/Tools/js/jquery.validate.min.js",
+              "src/assets/Tools/js/mail-script.js",
+              "src/assets/Tools/js/jquery.ajaxchimp.min.js",
+              "src/assets/Tools/js/jquery.slicknav.min.js",
+              "src/assets/Tools/js/plugins.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "EMD4IT:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "EMD4IT:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "EMD4IT:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "tsconfig.app.json",
+              "tsconfig.spec.json",
+              "e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "e2e/protractor.conf.js",
+            "devServerTarget": "EMD4IT:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "EMD4IT:serve:production"
+            }
+          }
+        }
+      }
+    }},
+  "defaultProject": "EMD4IT"
+}
