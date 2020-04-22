@@ -21,6 +21,7 @@ import { FAQPageComponent } from './Pages/f-a-q-page/f-a-q-page.component';
 import { TeamCardComponent } from './Widgets/team-card/team-card.component';
 import { BreakingNewsComponent } from './LayOut/breaking-news/breaking-news.component';
 import { ProjectBlogComponent } from './Widgets/project-blog/project-blog.component';
+import { InstagramFeedsComponent } from './Components/instagram-feeds/instagram-feeds.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ProjectBlogComponent } from './Widgets/project-blog/project-blog.compon
     FAQPageComponent,
     TeamCardComponent,
     BreakingNewsComponent,
-    ProjectBlogComponent
+    ProjectBlogComponent,
+    InstagramFeedsComponent
   ],
   imports: [
     BrowserModule,
