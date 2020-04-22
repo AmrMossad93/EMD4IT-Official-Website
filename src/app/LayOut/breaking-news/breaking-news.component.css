@@ -1,0 +1,41 @@
+.bg-orange {
+  background-color: #F7921C;
+}
+
+.bg-purple {
+  background-color: #6D2671;
+}
+
+.badge-primary {
+  color: #fff;
+  background-color: #6D2671;
+}
+
+a.text-primary:focus, a.text-primary:hover {
+  color: #6D2671 !important;
+}
+
+.text-primary {
+  color: #6D2671 !important;
+}
+
+.navigation-box {
+  top: .4rem;
+  right: .8rem;
+  width: 2rem;
+  position: absolute;
+}
+
+@media (min-width: 768px) {
+  .breaking-caret:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 15px solid #6D2671;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -15px;
+    top: 0;
+  }
+}

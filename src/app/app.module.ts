@@ -19,6 +19,7 @@ import { ServiceCardComponent } from './Widgets/service-card/service-card.compon
 import { ProjectCardComponent } from './Widgets/project-card/project-card.component';
 import { FAQPageComponent } from './Pages/f-a-q-page/f-a-q-page.component';
 import { TeamCardComponent } from './Widgets/team-card/team-card.component';
+import { BreakingNewsComponent } from './LayOut/breaking-news/breaking-news.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { TeamCardComponent } from './Widgets/team-card/team-card.component';
     ServiceCardComponent,
     ProjectCardComponent,
     FAQPageComponent,
-    TeamCardComponent
+    TeamCardComponent,
+    BreakingNewsComponent
   ],
   imports: [
     BrowserModule,
