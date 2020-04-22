@@ -8,7 +8,7 @@ declare var $: any;
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-
+  yearDate: number = new Date().getFullYear();
   constructor() {
   }
 

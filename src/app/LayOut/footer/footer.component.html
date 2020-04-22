@@ -1,89 +1,256 @@
-<footer>
-  <!-- Footer Start-->
-  <div class="footer-area footer-padding">
-    <div class="container">
-      <div class="row d-flex justify-content-between">
-        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-          <div class="single-footer-caption mb-50">
-            <div class="single-footer-caption mb-30">
-              <!-- logo -->
-              <div class="footer-logo">
-                <a routerLink="/"><img width="210" src="assets/Tools/img/logo/EMD4IT%20Logo.jpeg" alt=""></a>
-              </div>
-              <div class="footer-tittle">
-                <div class="footer-pera">
-                  <p><span style="color: #F7921C">EMD<span style="color: #6D2671">4</span>IT</span>  is a fast growing software house in the heart of the Middle East, Egypt. </p>
-                </div>
-              </div>
-              <!-- social -->
-              <div class="footer-social">
-                <a href="https://www.facebook.com/Emd4it" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                <a href="#"><i class="fab fa-twitter-square"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-pinterest-square"></i></a>
-              </div>
-            </div>
+<!--<footer>-->
+<!--  &lt;!&ndash; Footer Start&ndash;&gt;-->
+<!--  <div class="footer-area footer-padding">-->
+<!--    <div class="container">-->
+<!--      <div class="row d-flex justify-content-between">-->
+<!--        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">-->
+<!--          <div class="single-footer-caption mb-50">-->
+<!--            <div class="single-footer-caption mb-30">-->
+<!--              &lt;!&ndash; logo &ndash;&gt;-->
+<!--              <div class="footer-logo">-->
+<!--                <a routerLink="/"><img width="210" src="assets/Tools/img/logo/EMD4IT%20Logo.jpeg" alt=""></a>-->
+<!--              </div>-->
+<!--              <div class="footer-tittle">-->
+<!--                <div class="footer-pera">-->
+<!--                  <p><span style="color: #F7921C">EMD<span style="color: #6D2671">4</span>IT</span>  is a fast growing software house in the heart of the Middle East, Egypt. </p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              &lt;!&ndash; social &ndash;&gt;-->
+<!--              <div class="footer-social">-->
+<!--                <a href="https://www.facebook.com/Emd4it" target="_blank"><i class="fab fa-facebook-square"></i></a>-->
+<!--                <a href="#"><i class="fab fa-twitter-square"></i></a>-->
+<!--                <a href="#"><i class="fab fa-linkedin"></i></a>-->
+<!--                <a href="#"><i class="fab fa-pinterest-square"></i></a>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">-->
+<!--          <div class="single-footer-caption mb-50">-->
+<!--            <div class="footer-tittle">-->
+<!--              <h4>Company</h4>-->
+<!--              <ul>-->
+<!--                <li><a routerLink="/">Home</a></li>-->
+<!--                <li><a routerLink="/about">About Us</a></li>-->
+<!--                <li><a routerLink="/service/advertising">Services</a></li>-->
+<!--                <li><a routerLink="/projects">Projects</a></li>-->
+<!--                <li><a routerLink="/contact-us"> Contact Us</a></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-7">-->
+<!--          <div class="single-footer-caption mb-50">-->
+<!--            <div class="footer-tittle">-->
+<!--              <h4>Services</h4>-->
+<!--              <ul>-->
+<!--                <li><a href="#">Web Development</a></li>-->
+<!--                <li><a href="#">Mobile Development</a></li>-->
+<!--                <li><a href="#">Advertising</a></li>-->
+<!--                <li><a href="#">Digital marketing</a></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">-->
+<!--          <div class="single-footer-caption mb-50">-->
+<!--            <div class="footer-tittle">-->
+<!--              <h4>Get in Touch</h4>-->
+<!--              <ul>-->
+<!--                <li><a href="tel:01093447573">0109-3447-573</a></li>-->
+<!--                <li><a href="mailto:info@emd4it.com"> info@emd4it.com</a></li>-->
+<!--                <li><a href="#">New Nozha, Cairo</a></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  &lt;!&ndash; footer-bottom aera &ndash;&gt;-->
+<!--  <div class="footer-bottom-area footer-bg">-->
+<!--    <div class="container">-->
+<!--      <div class="footer-border">-->
+<!--        <div class="row d-flex align-items-center">-->
+<!--          <div class="col-xl-12 ">-->
+<!--            <div class="footer-copy-right text-center">-->
+<!--              <p>-->
+<!--                Copyright &copy;<script>document.write(new Date().getFullYear());</script>-->
+<!--                All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a-->
+<!--                routerLink="/">EMD<span style="color: #6D2671">4</span>IT</a>-->
+<!--              </p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  &lt;!&ndash; Footer End&ndash;&gt;-->
+<!--</footer>-->
+<footer id="dk-footer" class="dk-footer mt-40">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-4">
+        <div class="dk-footer-box-info">
+          <a routerLink="/" class="footer-logo">
+            <img src="assets/Tools/img/logo/EMD4IT%20Logo.jpeg" alt="footer_logo" class="img-fluid">
+          </a>
+          <p class="footer-info-text">
+            Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+          </p>
+          <div class="footer-social-link">
+            <h3>Follow us</h3>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
           </div>
+          <!-- End Social link -->
         </div>
-        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
-          <div class="single-footer-caption mb-50">
-            <div class="footer-tittle">
-              <h4>Company</h4>
-              <ul>
-                <li><a routerLink="/">Home</a></li>
-                <li><a routerLink="/about">About Us</a></li>
-                <li><a routerLink="/service/advertising">Services</a></li>
-                <li><a routerLink="/projects">Projects</a></li>
-                <li><a routerLink="/contact-us"> Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-7">
-          <div class="single-footer-caption mb-50">
-            <div class="footer-tittle">
-              <h4>Services</h4>
-              <ul>
-                <li><a href="#">Web Development</a></li>
-                <li><a href="#">Mobile Development</a></li>
-                <li><a href="#">Advertising</a></li>
-                <li><a href="#">Digital marketing</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-          <div class="single-footer-caption mb-50">
-            <div class="footer-tittle">
-              <h4>Get in Touch</h4>
-              <ul>
-                <li><a href="tel:01093447573">0109-3447-573</a></li>
-                <li><a href="mailto:info@emd4it.com"> info@emd4it.com</a></li>
-                <li><a href="#">New Nozha, Cairo</a></li>
-              </ul>
-            </div>
-          </div>
+        <!-- End Footer info -->
+        <div class="footer-awarad">
+          <p>Develop Your Mind With EMD<span style="color: #6D2571">4</span>IT</p>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- footer-bottom aera -->
-  <div class="footer-bottom-area footer-bg">
-    <div class="container">
-      <div class="footer-border">
-        <div class="row d-flex align-items-center">
-          <div class="col-xl-12 ">
-            <div class="footer-copy-right text-center">
-              <p>
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-                All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a
-                routerLink="/">EMD<span style="color: #6D2671">4</span>IT</a>
-              </p>
+      <!-- End Col -->
+      <div class="col-md-12 col-lg-8">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <div class="contact-us">
+              <div class="contact-icon">
+                <i class="fa fa-map-o" aria-hidden="true"></i>
+              </div>
+              <!-- End contact Icon -->
+              <div class="contact-info">
+                <h3>Cairo Egypt</h3>
+                <p>5353 Road Avenue</p>
+              </div>
+              <!-- End Contact Info -->
             </div>
+            <!-- End Contact Us -->
+          </div>
+          <!-- End Col -->
+          <div class="col-md-6 col-12">
+            <div class="contact-us">
+              <div class="contact-icon">
+                <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+              </div>
+              <!-- End contact Icon -->
+              <div class="contact-info">
+                <h3>01093447573</h3>
+                <p>Give us a call</p>
+              </div>
+              <!-- End Contact Info -->
+            </div>
+            <!-- End Contact Us -->
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Contact Row -->
+        <div class="row">
+          <div class="col-12">
+            <div class="footer-widget  footer-left-widget">
+              <div class="section-heading">
+                <h3>Useful Links</h3>
+                <span class="animate-border border-black"></span>
+              </div>
+              <ul>
+                <li>
+                  <a routerLink="/about">About us</a>
+                </li>
+                <li>
+                  <a routerLink="/service/advertising">Services</a>
+                </li>
+                <li>
+                  <a routerLink="/projects">Projects</a>
+                </li>
+                <li>
+                  <a routerLink="/team">Our Team</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a routerLink="/contact-us">Contact us</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+                <li>
+                  <a href="#">Testimonials</a>
+                </li>
+                <li>
+                  <a routerLink="/f-a-q">FAQ</a>
+                </li>
+              </ul>
+            </div>
+            <!-- End Footer Widget -->
+          </div>
+          <!-- End col -->
+
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Widget Row -->
+  </div>
+  <!-- End Contact Container -->
+
+
+  <div class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-12">
+          <span>Copyright © {{yearDate}}, All Right Reserved EMD4IT</span>
+        </div>
+        <!-- End Col -->
+        <div class="col-md-6 col-12">
+          <div class="copyright-menu">
+            <ul>
+              <li>
+                <a routerLink="/">Home</a>
+              </li>
+              <li>
+                <a href="#">Terms</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a routerLink="/contact-us">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
+        <!-- End col -->
       </div>
+      <!-- End Row -->
     </div>
+    <!-- End Copyright Container -->
   </div>
-  <!-- Footer End-->
+  <!-- End Copyright -->
 </footer>
