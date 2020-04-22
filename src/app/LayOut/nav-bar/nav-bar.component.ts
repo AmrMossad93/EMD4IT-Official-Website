@@ -14,24 +14,24 @@ export class NavBarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const menu = $('#navigation');
-    $(document).ready(() => {
-
-      if (menu.length) {
-        // tslint:disable-next-line:only-arrow-functions
-        $(function() {
-          menu.slicknav({
-            prependTo: '.mobile_menu',
-            closedSymbol: '+',
-            openedSymbol: '-',
-            duplicate: true,
-            parentTag: 'a',
-          });
-        });
-
-      }
-
-    });
+    // const menu = $('#navigation');
+    // $(document).ready(() => {
+    //
+    //   if (menu.length) {
+    //     // tslint:disable-next-line:only-arrow-functions
+    //     $(function() {
+    //       menu.slicknav({
+    //         prependTo: '.mobile_menu',
+    //         closedSymbol: '+',
+    //         openedSymbol: '-',
+    //         duplicate: true,
+    //         parentTag: 'a',
+    //       });
+    //     });
+    //
+    //   }
+    //
+    // });
 
     // tslint:disable-next-line:only-arrow-functions
     $(window).on('scroll', function() {
