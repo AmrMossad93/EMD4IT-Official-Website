@@ -22,6 +22,7 @@ import { TeamCardComponent } from './Widgets/team-card/team-card.component';
 import { BreakingNewsComponent } from './LayOut/breaking-news/breaking-news.component';
 import { ProjectBlogComponent } from './Widgets/project-blog/project-blog.component';
 import { InstagramFeedsComponent } from './Components/instagram-feeds/instagram-feeds.component';
+import { ProcessScheduleComponent } from './Components/process-schedule/process-schedule.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { InstagramFeedsComponent } from './Components/instagram-feeds/instagram-
     TeamCardComponent,
     BreakingNewsComponent,
     ProjectBlogComponent,
-    InstagramFeedsComponent
+    InstagramFeedsComponent,
+    ProcessScheduleComponent
   ],
   imports: [
     BrowserModule,
