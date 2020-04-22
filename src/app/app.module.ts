@@ -20,6 +20,7 @@ import { ProjectCardComponent } from './Widgets/project-card/project-card.compon
 import { FAQPageComponent } from './Pages/f-a-q-page/f-a-q-page.component';
 import { TeamCardComponent } from './Widgets/team-card/team-card.component';
 import { BreakingNewsComponent } from './LayOut/breaking-news/breaking-news.component';
+import { ProjectBlogComponent } from './Widgets/project-blog/project-blog.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { BreakingNewsComponent } from './LayOut/breaking-news/breaking-news.comp
     ProjectCardComponent,
     FAQPageComponent,
     TeamCardComponent,
-    BreakingNewsComponent
+    BreakingNewsComponent,
+    ProjectBlogComponent
   ],
   imports: [
     BrowserModule,
