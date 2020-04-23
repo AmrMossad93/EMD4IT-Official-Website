@@ -152,7 +152,7 @@ h6 {
   margin-top: 0px;
   font-style: normal;
   font-weight: 500;
-  text-transform: normal
+  /*text-transform: normal;*/
 }
 
 p {
@@ -5709,6 +5709,7 @@ hr {
   }
 }
 
+
 .flex-center-start {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5718,7 +5719,7 @@ hr {
   align-items: center;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  justify-content: start
+  justify-content: flex-start;
 }
 
 .overlay::before {
@@ -6502,10 +6503,10 @@ del {
   border: 1px solid #f1f1f1
 }
 
-.primary-checkbox input:checked + label {
-  background: url("src/assets/Tools/img/elements/primary-check.png") no-repeat center center/cover;
-  border: none
-}
+/*.primary-checkbox input:checked + label {*/
+/*  background: url("src/assets/Tools/img/elements/primary-check.png") no-repeat center center/cover;*/
+/*  border: none*/
+/*}*/
 
 .confirm-checkbox {
   width: 16px;
@@ -6540,10 +6541,10 @@ del {
   border: 1px solid #f1f1f1
 }
 
-.confirm-checkbox input:checked + label {
-  background: url("src/assets/Tools/img/elements/success-check.png") no-repeat center center/cover;
-  border: none
-}
+/*.confirm-checkbox input:checked + label {*/
+/*  background: url("src/assets/Tools/img/elements/success-check.png") no-repeat center center/cover;*/
+/*  border: none*/
+/*}*/
 
 .disabled-checkbox {
   width: 16px;
@@ -6583,10 +6584,10 @@ del {
   z-index: 3
 }
 
-.disabled-checkbox input:checked + label {
-  background: url("src/assets/Tools/img/elements/disabled-check.png") no-repeat center center/cover;
-  border: none
-}
+/*.disabled-checkbox input:checked + label {*/
+/*  background: url("src/assets/Tools/img/elements/disabled-check.png") no-repeat center center/cover;*/
+/*  border: none*/
+/*}*/
 
 .primary-radio {
   width: 16px;
@@ -6621,10 +6622,10 @@ del {
   border: 1px solid #f1f1f1
 }
 
-.primary-radio input:checked + label {
-  background: url("src/assets/Tools/img/elements/primary-radio.png") no-repeat center center/cover;
-  border: none
-}
+/*.primary-radio input:checked + label {*/
+/*  background: url("src/assets/Tools/img/elements/primary-radio.png") no-repeat center center/cover;*/
+/*  border: none*/
+/*}*/
 
 .confirm-radio {
   width: 16px;
@@ -6661,7 +6662,7 @@ del {
 
 .confirm-radio input:checked + label {
   /*background: url(../img/elements/success-radio.png) no-repeat center center/cover;*/
-  background: url("src/assets/Tools/img/elements/success-radio.png") no-repeat center center/cover;
+  /*background: url("src/assets/Tools/img/elements/success-radio.png") no-repeat center center/cover;*/
   border: none
 }
 
@@ -6704,7 +6705,7 @@ del {
 }
 
 .disabled-radio input:checked + label {
-  background: url("src/assets/Tools/img/elements/disabled-radio.png") no-repeat center center/cover;
+  /*background: url("src/assets/Tools/img/elements/disabled-radio.png") no-repeat center center/cover;*/
   border: none
 }
 
