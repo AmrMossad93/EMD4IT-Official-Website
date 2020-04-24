@@ -14,6 +14,10 @@ export class NavBarComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    // tslint:disable-next-line:only-arrow-functions
+    $('.navbar-nav>li>a').on('click', function() {
+      $('.navbar-collapse').collapse('hide');
+    });
     // const menu = $('#navigation');
     // $(document).ready(() => {
     //
