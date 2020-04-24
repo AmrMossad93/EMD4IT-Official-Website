@@ -6,9 +6,6 @@
     "EMD4IT": {
       "projectType": "application",
       "schematics": {
-        "@schematics/angular:component": {
-          "style": "sass"
-        }
       },
       "root": "",
       "sourceRoot": "src",

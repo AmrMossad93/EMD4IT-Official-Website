@@ -24,6 +24,8 @@ import {ProjectBlogComponent} from './Widgets/project-blog/project-blog.componen
 import {InstagramFeedsComponent} from './Components/instagram-feeds/instagram-feeds.component';
 import {ProcessScheduleComponent} from './Components/process-schedule/process-schedule.component';
 import { CaseCardComponent } from './Widgets/case-card/case-card.component';
+import { CloudsComponent } from './Components/clouds/clouds.component';
+
 
 @NgModule({
   declarations: [
@@ -48,7 +50,8 @@ import { CaseCardComponent } from './Widgets/case-card/case-card.component';
     ProjectBlogComponent,
     InstagramFeedsComponent,
     ProcessScheduleComponent,
-    CaseCardComponent
+    CaseCardComponent,
+    CloudsComponent,
   ],
   imports: [
     BrowserModule,
