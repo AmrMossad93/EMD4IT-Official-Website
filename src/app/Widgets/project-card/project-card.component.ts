@@ -10,6 +10,7 @@ export class ProjectCardComponent implements OnInit {
   @Input() category: string;
   @Input() tittle: string;
   @Input() route: string;
+  @Input() fragment: string;
   @Input() date: string;
 
   constructor() {
