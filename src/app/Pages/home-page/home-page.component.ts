@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {NavigationEnd, Router} from '@angular/router';
+
 declare var $: any;
 
 @Component({
@@ -7,8 +9,21 @@ declare var $: any;
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
+  private fragment: string;
 
-  constructor() {
+  constructor(router: Router) {
+
+    router.events.subscribe(s => {
+      if (s instanceof NavigationEnd) {
+        const tree = router.parseUrl(router.url);
+        if (tree.fragment) {
+          const element = document.querySelector('#' + tree.fragment);
+          if (element) {
+            element.scrollIntoView(true);
+          }
+        }
+      }
+    });
 
   }
 
