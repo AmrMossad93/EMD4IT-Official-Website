@@ -31,7 +31,6 @@
               "src/assets/Tools/js/vendor/jquery-1.12.4.min.js",
               "src/assets/Tools/js/popper.min.js",
               "src/assets/Tools/js/bootstrap.min.js",
-
               "src/assets/Tools/js/owl.carousel.min.js",
               "src/assets/Tools/js/slick.min.js",
               "src/assets/Tools/js/gijgo.min.js",
@@ -141,6 +140,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "EMD4IT"
+    }
+  },
+  "defaultProject": "EMD4IT",
+  "cli": {
+    "analytics": "c532664f-dee1-4dac-aca8-0942050c79f8"
+  }
 }
