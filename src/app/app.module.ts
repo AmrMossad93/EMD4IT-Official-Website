@@ -23,6 +23,7 @@ import {BreakingNewsComponent} from './LayOut/breaking-news/breaking-news.compon
 import {ProjectBlogComponent} from './Widgets/project-blog/project-blog.component';
 import {InstagramFeedsComponent} from './Components/instagram-feeds/instagram-feeds.component';
 import {ProcessScheduleComponent} from './Components/process-schedule/process-schedule.component';
+import { CaseCardComponent } from './Widgets/case-card/case-card.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import {ProcessScheduleComponent} from './Components/process-schedule/process-sc
     BreakingNewsComponent,
     ProjectBlogComponent,
     InstagramFeedsComponent,
-    ProcessScheduleComponent
+    ProcessScheduleComponent,
+    CaseCardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,10 @@
+<div class="single-cases-img">
+  <img [src]="imgPath" alt="{{category}}">
+  <!-- img hover caption -->
+  <div class="single-cases-cap">
+    <h4 *ngIf="fragment"><a routerLink="{{route}}" fragment="{{fragment}}">{{title}}</a></h4>
+    <h4 *ngIf="!fragment"><a routerLink="{{route}}">{{title}}</a></h4>
+    <p>{{paragraph}}</p>
+    <span>{{category}}</span>
+  </div>
+</div>
