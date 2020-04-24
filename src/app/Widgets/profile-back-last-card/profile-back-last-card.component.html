@@ -3,6 +3,7 @@
   <div class="single-profile-back-last">
     <h2>{{title}}</h2>
     <p>{{paragraph}}</p>
-    <a routerLink="/{{route}}">{{btnName}} »</a>
+    <a *ngIf="fragment" routerLink="/{{route}}" fragment="{{fragment}}">{{btnName}} »</a>
+    <a *ngIf="!fragment" routerLink="/{{route}}">{{btnName}} »</a>
   </div>
 </div>

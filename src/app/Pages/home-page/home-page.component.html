@@ -47,13 +47,14 @@
       <div class="col-xl-4 col-lg-4 col-md-6">
         <app-profile-card
           [paragraph]="'The difference between something good and something great is attention to detail.'"
-          [title]="'Business Planning'" [imgPath]="'assets/Tools/img/team/team_1.jpg'" [route]="''"></app-profile-card>
+          [title]="'Business Planning'" [imgPath]="'assets/Tools/img/team/team_1.jpg'" [route]="'services'"
+          [fragment]="'software-development'"></app-profile-card>
       </div>
       <div class="col-xl-4 col-lg-4 col-md-6">
         <app-profile-card
           [paragraph]="' Custom made systems designed and tailored to fully match and cover your business needs and processes, completely scalable, extendable and updatable with no limit. '"
           [title]="'Custom Systems'" [imgPath]="'assets/Tools/img/team/team_2.jpg'"
-          [route]="''"></app-profile-card>
+          [route]="'services'" [fragment]="'software-development'"></app-profile-card>
       </div>
       <div class="col-xl-4 col-lg-4 col-md-6">
         <app-profile-back-last-card [route]="'projects'" [title]="'What we do for you'"
@@ -120,7 +121,7 @@
     <!-- button -->
     <div class="row justify-content-center">
       <div class="room-btn pt-50">
-        <a routerLink="services/marketing" class="border-btn">More Services</a>
+        <a routerLink="services" class="border-btn">More Services</a>
       </div>
     </div>
   </div>

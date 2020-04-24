@@ -4,7 +4,8 @@
       <img src="{{imgPath}}" alt="">
     </div>
     <div class="profile-caption">
-      <h4><a routerLink="/{{route}}">{{title}}</a></h4>
+      <h4 *ngIf="fragment"><a routerLink="/{{route}}" fragment="{{fragment}}">{{title}}</a></h4>
+      <h4 *ngIf="!fragment"><a routerLink="/{{route}}">{{title}}</a></h4>
       <p>{{paragraph}}</p>
     </div>
   </div>

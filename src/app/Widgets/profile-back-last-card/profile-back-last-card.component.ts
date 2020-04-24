@@ -9,8 +9,11 @@ export class ProfileBackLastCardComponent implements OnInit {
   @Input() title: string;
   @Input() route: string;
   @Input() paragraph: string;
+  @Input() fragment: string;
   @Input() btnName: string;
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
