@@ -14,8 +14,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "docs",
-            "baseHref" : "https://amrmossad93.github.io/EMD4IT-Official-Website/",
+            "outputPath": "dist/EMD4IT",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
